@@ -128,9 +128,6 @@ def load_data(dataset, split_mode, seed, skip_head=True):
                 ppi_edges_train_by_type[interaction].append((v, u))  # 双向
                 break
 
-    # ppi_g_train = dgl.heterograph({
-    #     ('protein', rel_type, 'protein'): edges
-    #     for rel_type, edges in ppi_edges_train_by_type.items()}).to(device)
     ppi_g_train = dgl.heterograph({
         ('protein', rel_type, 'protein'): edges
         for rel_type, edges in ppi_edges_train_by_type.items()}, num_nodes_dict={'protein': ppi_g.num_nodes('protein')}).to(device)

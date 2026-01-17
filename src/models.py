@@ -347,7 +347,7 @@ class GraphTransformer_Decoder(nn.Module):
         self.dim = param['prot_hidden_dim']
 
         # 边偏置模块
-        self.edge_bias_module = EdgeBias(num_edge_types=2, num_rbf=16)
+        self.edge_bias_module = EdgeBias(num_edge_types=4, num_rbf=16)
         # 用于 mask 节点
         self.mask_token = nn.Parameter(torch.randn(1, self.dim))
 
@@ -456,7 +456,7 @@ class GraphTransformer_Encoder(nn.Module):
         self.pooling = AttentionPooling(dim=self.dim)
 
         # 边偏置（距离 RBF + 边类型）
-        self.edge_bias_module = EdgeBias(num_edge_types=2, num_rbf=16)
+        self.edge_bias_module = EdgeBias(num_edge_types=4, num_rbf=16)
 
         # Transformer blocks
         self.layers = nn.ModuleList([

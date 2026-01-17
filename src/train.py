@@ -83,7 +83,6 @@ def evaluator(model, ppi_g, prot_embed, ppi_list, labels, index, batch_size, mod
 def pretrain_vae():
 
     if args.pre_train is None:
-        # protein_data, ppi_g, ppi_list, labels, ppi_split_dict = load_data(param['dataset'], param['split_mode'], param['seed'])
         protein_data, ppi_g_train, ppi_g_test, ppi_list, labels, ppi_split_dict = load_data(param['dataset'], param['split_mode'], param['seed'])
     else:
         protein_data = load_pretrain_data(args.pre_train)

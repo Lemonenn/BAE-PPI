@@ -50,10 +50,10 @@ def evaluat_metrics(output, label):
             elif truth_y[i][j] == 0:
                 FP += 1
 
-        # Accuracy = (TP + TN) / (N*C + 1e-10)
-        Precision = TP / (TP + FP + 1e-10)
-        Recall = TP / (TP + FN + 1e-10)
-        F1_score = 2 * Precision * Recall / (Precision + Recall + 1e-10)
+    # Accuracy = (TP + TN) / (N*C + 1e-10)
+    Precision = TP / (TP + FP + 1e-10)
+    Recall = TP / (TP + FN + 1e-10)
+    F1_score = 2 * Precision * Recall / (Precision + Recall + 1e-10)
 
     return F1_score
 
