@@ -1,4 +1,4 @@
-# T-GAE: Graph Auto-Encoder for Effective Protein-Protein Interaction Prediction
+# T-GAE: Transformer-based Graph Autoencoder for Protein-Protein Interaction
 
 ## Dependencies
 Install the required dependencies and activate the running environment with conda:
