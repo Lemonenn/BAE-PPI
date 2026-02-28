@@ -1,4 +1,4 @@
-# BAE-PPI: Transformer-based Graph Autoencoder for Protein-Protein Interaction
+# BAE-PPI：Biophysically Informed Graph Autoencoder for Robust Protein-Protein Interaction Prediction
 
 ## Dependencies
 Install the required dependencies and activate the running environment with conda:
