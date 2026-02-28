@@ -1,10 +1,10 @@
-# T-GAE: Transformer-based Graph Autoencoder for Protein-Protein Interaction
+# BAE-PPI: Transformer-based Graph Autoencoder for Protein-Protein Interaction
 
 ## Dependencies
 Install the required dependencies and activate the running environment with conda:
 ```bash
 conda env create -f environment.yml
-conda activate T-GAE
+conda activate BAE-PPI
 ```
 The default PyTorch version and cudatoolkit version are configured in environment.yml, which can be modified according to your local CUDA version and hardware environment.
 
