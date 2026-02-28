@@ -1,4 +1,4 @@
-name: T-GAE
+name: BAE-PPI
 channels:
   - pytorch
   - conda-forge
